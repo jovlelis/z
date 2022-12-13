@@ -1,0 +1,472 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style/gen.css">
+<style>
+  :root
+{
+    --bg-black-900:#f2f2fc;
+    --bg-black-100:#fdf9ff;
+    --bg-black-50:#e8dfec;
+    --text-black-900:#302e4d;
+    --text-black-700:#504e70;
+    --bg-black-1: #209797;
+    --bg-black-2: #ccc;
+    --text-black-1: #ee085c   ;
+}
+
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: 150px;
+  border: none;
+
+}
+.container-head{
+  display: block;
+}
+.top-head{
+  background: #209797;
+  padding: 45px 0;
+  height: 80px;
+  display: flex;
+  max-width: 100%;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  border-bottom: 1px solid #504e70;
+  box-shadow: 1px 1px #474747 ;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+.left-top-head{
+  position: relative;
+  max-width: 450px;
+  width: 450px;
+  margin-left: 30px;
+  display: flex;
+
+}
+
+.left-top-head img{
+  max-width: 75px;
+  width: 75px;
+  cursor: url(cursor/cursor2.png),auto;
+
+  
+}
+.logo{
+  font-size: 28px;
+  font-family: 'Poppins',sans-serif;
+  flex: 1;
+  align-items: center;
+  padding: 15px 0;
+  font-weight: 700;
+  color: #fff;
+  word-spacing: 2px;
+  cursor: url(cursor/cursor2.png),auto;
+  -webkit-text-stroke-color: #ee085c;
+    -webkit-text-stroke-width: 1.5px ;
+
+}
+.logo span{
+  color: var(--text-black-1);
+  font-size: 40px;
+  font-family: 'Clicker Script',arial;
+  font-style: italic;
+}
+.mid-top-head{
+  position: relative;
+    flex: 1;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+}
+.search-bar {
+  flex: 1;
+  height: 36px;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  width: 0;
+}
+
+.search-bar::placeholder {
+  font-size: 16px;
+}
+
+.search-button {
+  height: 40px;
+  width: 66px;
+  background-color: rgb(240, 240, 240);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(192, 192, 192);
+  margin-left: -1px;
+  margin-right: 10px;
+  cursor: url(cursor/cursor2.png),auto;
+
+}
+.shop-icon .tooltip
+,
+.search-button,
+.voice-search-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.shop-icon .tooltip
+,
+.search-button .tooltip,
+.voice-search-button .tooltip
+{  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.shop-icon .tooltip
+,
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip {
+  opacity: 1;
+}
+
+.search-icon {
+  height: 25px;
+}
+.voice-search-button {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: none;
+  background: linear-gradient(rgba(0,0,0,.3), transparent);
+}
+.voice-search-icon {
+  height: 24px;
+  transition: .3s;
+}
+.voice-search-icon:hover{
+  height: 30px;
+}
+.search-button,
+.voice-search-button,
+ .shop-icon .tooltip
+
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: url(cursor/cursor2.png),auto;
+}
+.search-button .tooltip,
+.voice-search-button .tooltip,
+ .shop-icon .tooltip
+ {
+  font-family: Roboto, Arial;
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.shop-icon .tooltip
+ {
+  opacity: 1;
+}
+
+.right-top-head{
+  position: relative;
+  width: 400px;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+.right-top-head .fas{
+  color: var(--text-black-1);
+}
+.right-top-head a{
+  font-size: 16px;
+  word-spacing: 3px;
+  color: #fff;
+}
+.shop-icon{
+  width: 20px;
+  cursor: url(cursor/cursor2.png),auto;
+}
+.user-pic{
+  width: 43px;
+  border-radius: 50%;
+  cursor: url(cursor/cursor2.png),auto;
+  transition: .5s ease;
+}
+.user-pic:hover{
+  width: 38px;
+}
+.no{
+  cursor: url(cursor/cursor2.png),auto;
+
+}
+.nav{
+  position: fixed;
+  height: 70px;
+  display: flex;
+  max-width: 100%;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #209797;
+  padding: 0 250px;
+  border: none;
+  border-bottom: 1px solid #474747;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  z-index: 100;
+  transition:  .5s ease-in-out;
+  top: 91;
+  left: 0;
+  right: 0;
+}
+.nav.sticky{
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+.nav ul{
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  border: none;
+}
+.nav ul li{
+  text-decoration: none;
+}
+.nav ul li a{
+  font-size: 20px;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 500;
+  color: #fff;
+  transition: .5s;
+  cursor: url(cursor/cursor2.png),auto;
+
+}
+.nav ul li:hover a{
+  font-weight: 700;
+  color: #dd033a;
+}
+.sub-menu-wrap{
+  position: absolute;
+  top: 60%;
+  right: 12%;
+  width: 320px;
+  z-index: 200;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .5s;
+}
+.sub-menu-wrap.open-menu{
+  max-height: 400px;
+}
+.sub-menu{
+  border: .3px solid #ccc;
+  border-top-left-radius: 30%;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  background: #209797;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 3px 3px 5px#474747;
+}
+.user-info{
+  display: flex;
+  align-items: center;
+}
+.user-info h3{
+  font-weight: 700;
+}
+.user-info img{
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 3px;
+}
+.sub-menu hr{
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background: #ccc;
+  margin: 14px 0 10px;
+}
+.sub-menu-link{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #525252;
+  cursor: url(cursor/cursor2.png),auto;
+}
+.sub-menu-link p{
+  width: 100%; 
+  
+}
+.sub-menu-link:hover p{
+  font-size: 18px;
+  color: #dd033a;
+  font-weight: 600;
+}
+.sub-menu-link i{
+  width: 30px;
+  background: #ece9e9;
+  border-radius: 50%;
+  padding: 5px;
+  margin-right: 10px;
+  color: #fff;
+  margin-top: 5px;
+}
+.sub-menu-link .fas{
+  color: #000;
+}
+.sub-menu-link span{
+  font-size: 22px;
+  transition: transform .5s;
+}
+.sub-menu-link:hover span{
+  transform: translateX(5px);
+}
+
+</style>
+
+<header>
+  <div class="container-head">
+    <div class="top-head">
+      <div class="left-top-head">
+        <img src="images/logo.png" alt="">
+        <a href="#" class="logo"><span>3J&rsquo;s </span>CARE PHARMACY</a>
+      </div>
+      <div class="mid-top-head">
+        <input class="search-bar" type="text" placeholder="Search">
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg">
+          <div class="tooltip">Search</div>
+        </button>
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+          <div class="tooltip">Search with your voice</div>
+        </button></div>
+      <div class="right-top-head">
+        <a href="tel:63+ 9076696013" class="no"><i class="fas fa-phone"></i> 63+ 9076696013</a>  
+        <a href="product.html"><button class="voice-search-button" style="background: transparent;">
+          <img class="voice-search-icon" src="icons/shop.png">
+          <div class="tooltip">Shop</div>
+        </button>     </a>
+        <img src="images/logo.png" class="user-pic" onclick="toggleMenu()">
+        <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu">
+            <div class="user-info">
+              <img src="images/logo.png" alt="">
+              <h3>3J&rsquo;s Care Pharmacy</h3>
+            </div>
+            <hr>
+
+            <a href="#" class="sub-menu-link">
+              <i class="fas fa-user-circle"></i>
+              <p>Edit Profile</p>
+              <span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+              <i class="fas fa-envelope"></i>
+              <p>Inbox</p>
+              <span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+              <i class="fas fa-gear fa-spin "></i>
+              <p>Setting and Privacy</p>
+              <span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+              <i class="fas fa-question-circle"></i>
+              <p>Help & Support</p>
+              <span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+              <i class="fas fa-door-open"></i>
+              <p>Logout</p>
+              <span>></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="nav">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div>
+    
+  </div>
+
+
+</header>
+
+
+
+<script>
+  
+  let subMenu = document.getElementById("subMenu");
+
+  function toggleMenu(){
+    subMenu.classList.toggle("open-menu");
+  }
+
+
+</script>
+
+<script type="text/javascript">
+  window.addEventListener("scroll", function(){
+    var header = document.querySelector(".nav");
+    header.classList.toggle("sticky", window.scrollY > 0);
+  })
+</script>

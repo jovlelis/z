@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    margin: 0;
+    background: #d6d6d6;
+	cursor: url(../cursor/cursor1.png),auto;
+}
+h2,h3{
+  -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-width: 1px ;
+}
+ul{
+	list-style: none;
+}
+
+div{
+    display: block;
+    box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+  cursor: url(cursor/cursor2.png),auto;
+
+}
+.fas{
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+:root
+{
+    --bg-black-900:#d6d6d6;
+    --bg-black-100:#fdf9ff;
+    --bg-black-50:#e8dfec;
+    --text-black-900:#302e4d;
+    --text-black-700:#504e70;
+    --bg-black-1: #209797;
+    --bg-black-2: #ccc;
+    --text-black-1: #990429    ;
+
+}
+
+#cart-pic{
+ bottom: 20px;
+ right: 25px;
+  background: #06fafa;
+ position: fixed;
+ width: 50px;
+  text-align: center;
+  height: 40px;
+  padding: 2.5px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px #302e4d;
+  border: 1px solid #504e70;
+  z-index: 100;
+  transition: .8s; 
+  cursor: url(../cursor/cursor2.png),auto;
+}
+.cart-pic{
+  width: 50px;
+  padding: 0px 10px 5px 5px;
+}
+
+#cart-pic:hover {
+  background: #f7327a;
+  width: 55px;
+  height: 45px;
+  padding: 5px;
+}
+
+.cart{
+  position:fixed;
+  top: 100px;
+  right: -100%;
+  width: 400px;
+  max-height: auto;
+  min-height: 50vh;
+  padding: 20px;
+  background: #209797;
+  box-shadow: 0px 4px 15px rgb(0, 0, 0);
+  transition: 0.3s;
+  z-index: 100;
+  border-radius: 20px;
+  text-align: center;
+  margin: auto;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.cart.active{
+  right: 35%;
+}
+.cart-title{
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: .5rem;
+  color: #f7327a;
+}
+.cart-box{
+  display: grid;
+  grid-template-columns: 32% 50% 18%;
+  align-items: center;
+  object-fit: contain;
+  background-color: #6e6e6e;
+  padding: 20px;
+  box-shadow: 5px 5px 15px rgb(39, 39, 39);
+  grid-template-columns: 32% 50% 18%;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin: 10px;
+}
+
+.cart-img{
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  padding: 10px;
+  border-radius: 10px;
+  background: linear-gradient(rgba(0,0,0, .7), rgba(0,0,0,.7)),url(../images/images/bk1.jpg) ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+}
+.detail-box{
+  display: grid;
+  row-gap: 0.5rem;
+
+
+}
+.cart-product-title{
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #06fafa;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 700;
+  -webkit-text-stroke-color: #000;
+  -webkit-text-stroke-width: 1px ;
+}
+.cart-price{
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
+}
+.cart-price span{
+  font-weight: 500;
+  font-size: 16px;
+  color: gold;
+}
+.cart-quantity{
+  border: 1px solid white;
+  background: none;
+  outline-color:#fff ;
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0px 3px 5px rgb(0, 0, 0);
+  width: 2.4rem;
+}
+.cart-remove{
+  font-size: 24px;
+  color: #f7327a;
+  cursor: pointer;
+  -webkit-text-stroke-color: whitesmoke;
+  -webkit-text-stroke-width: .5px;
+  cursor: url(../cursor/cursor2.png),auto;
+}
+.total{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+  border-top: 1px solid whitesmoke;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.total-title{
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+.total-price{
+  margin-left: 0.5rem;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.btn-checkout{
+  margin: 20px 100px;
+  text-align: center;
+}
+
+#close-cart{
+  position: absolute;
+  top: .5rem;
+  right: 0.8rem;
+  font-size: 2rem;
+  color: #fff;
+  cursor: url(../cursor/cursor2.png),auto;
+  text-shadow: 5px 5px 5px rgb(0, 0, 0);
+
+}
+
+.cart-content{
+  overflow: hidden;
+  height:auto;
+  max-height: 200px;
+  overflow-y: scroll;
+
+}
+.cart-content::-webkit-scrollbar{
+  width: 10px;
+
+}
+
+.cart-content::-webkit-scrollbar-thumb{
+  background: #f7327a;
+  border-radius: 10px;
+
+}

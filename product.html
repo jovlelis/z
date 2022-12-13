@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>3J's Care Pharmacy</title>
+
+    <link rel="stylesheet" href="style/gen.css">
+    <link rel="stylesheet" href="style/product.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script
+    src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    crossorigin="anonymous"></script>
+    <script>
+      $(function() {
+        $('header').load("head.html");
+        $('footer').load("footer.html");
+        
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      
+    </header>
+    
+
+    <div id="cart-pic"><img class="cart-pic" src="icons/shop.png"></div>
+
+    
+    <div class="cart">
+      <h2 class="cart-title">Your Cart</h2>
+
+      <div class="cart-content">
+          
+
+      </div>
+      <div class="total">
+          <div class="total-title">total</div>
+          <div class="total-price">₱ 0</div>
+      </div>
+      
+      <button type="button" class="btn-checkout btn-buy appointmen-btn">Checkout <span></span></button>
+      <i class="fas fa-x" id="close-cart"></i>
+
+    </div>
+
+    <section class="product">
+      <div class="contact-bg">
+        <h3>Secure your health</h3>
+        <h2>Products</h2>
+        <div class="line">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <p class="par"> All trusted products and affordable</p>
+      </div>
+      <div class="featured">
+        <h2>Featured Products</h2>
+        <div class="shop">
+          <div class="tabContainer">
+              <div class="buttonContainer">
+                  <button onclick="showPanel(0,'transparent')">All</button>
+                  <button onclick="showPanel(1,'transparent')">Medical Equipment</button>
+                  <button onclick="showPanel(2,'transparent')">Medicine & Health</button>
+                  <button onclick="showPanel(3,'transparent')">Personal Care</button>
+                  <button onclick="showPanel(4,'transparent')">Baby Care</button>
+              </div>
+              <div class="tabPanel">
+                <div class="product-list">
+                            
+                    <div class=" product-box">
+                      <img src="images/images/biogesic.png" alt="" class="product-img">
+                      <h2 class="product-title">Biogesic</h2>
+                      <span class="price"><span>₱</span> 120.00</span>
+                      <button class="appointmen-btn add-cart"><i class="fas fa-cart-shopping"></i> Add to cart<span></span></button>
+
+                  </div>
+                  <div class=" product-box">
+                    <img src="images/images/mask.png" alt="" class="product-img">
+                    <h2 class="product-title">Mask </h2>
+                    <span class="price"><span>₱</span> 90.00</span>
+                    <button class="appointmen-btn add-cart"><i class="fas fa-cart-shopping"></i> Add to cart<span></span></button>
+                
+                  </div>
+
+                  <div class=" product-box">
+                    <img src="images/images/gloves.webp" alt="" class="product-img">
+                    <h2 class="product-title">gloves</h2>
+                    <span class="price"><span>₱</span> 150.00</span>
+                    <button class="appointmen-btn add-cart"><i class="fas fa-cart-shopping"></i> Add to cart<span></span></button>
+                
+                  </div>
+
+                  <div class=" product-box">
+                    <img src="images/images/alcohol.png" alt="" class="product-img">
+                    <h2 class="product-title">alcohol</h2>
+                    <span class="price"><span>₱</span> 119.00</span>
+                    <button class="appointmen-btn add-cart"><i class="fas fa-cart-shopping"></i> Add to cart<span></span></button>
+                
+                  </div>
+                  <div class=" product-box">
+                    <img src="images/images/thermometer.jpg" alt="" class="product-img">
+                    <h2 class="product-title">thermometer</h2>
+                    <span class="price"><span>₱</span> 199.00</span>
+                    <button class="appointmen-btn add-cart"><i class="fas fa-cart-shopping"></i> Add to cart<span></span></button>
+
+                  </div>
+                  <div class=" product-box">
+                    <img src="images/images/syringe.jpg" alt="" class="product-img">
+                    <h2 class="product-title">syringe</h2>
+                    <span class="price"><span>₱</span> 179.00</span>
+                    <button class="appointmen-btn add-cart"><i class="fas fa-cart-shopping"></i> Add to cart<span></span></button>
+                
+                  </div>
+
+                  <div class=" product-box">
+                    <img src="images/images/betadine.jpg" alt="" class="product-img">
+                    <h2 class="product-title">betadine</h2>
+                    <span class="price"><span>₱</span> 65.00</span>
+                    <button class="appointmen-btn add-cart"><i class="fas fa-cart-shopping"></i> Add to cart<span></span></button>
+                
+                  </div>
+
+                  <div class=" product-box">
+                    <img src="images/images/antibiotic.png" alt="" class="product-img">
+                    <h2 class="product-title">antibiotic</h2>
+                    <span class="price"><span>₱</span> 159.00</span>
+                    <button class="appointmen-btn add-cart"><i class="fas fa-cart-shopping"></i> Add to cart<span></span></button>
+                
+                  </div>
+                  <div class=" product-box">
+                    <img src="images/images/baby-powder.jpg" alt="" class="product-img">
+                    <h2 class="product-title">baby powder</h2>
+                    <span class="price"><span>₱</span> 35.00</span>
+                    <button class="appointmen-btn add-cart"><i class="fas fa-cart-shopping"></i> Add to cart<span></span></button>
+                
+                  </div>
+                  <div class=" product-box">
+                    <img src="images/images/soap.png" alt="" class="product-img">
+                    <h2 class="product-title">Soap</h2>
+                    <span class="price"><span>₱</span> 19.00</span>
+                    <button class="appointmen-btn add-cart"><i class="fas fa-cart-shopping"></i> Add to cart<span></span></button>
+                
+                  </div>
+                  <div class=" product-box">
+              <img src="images/images/baby_lotion.png" alt="" class="product-img">
+              <h2 class="product-title">baby lotion</h2>
+              <span class="price"><span>₱</span> 169.00</span>
+              <button class="appointmen-btn add-cart"><i class="fas fa-cart-shopping"></i> Add to cart<span></span></button>
+          
+            </div>
+            <div class=" product-box">
+              <img src="images/images/milk.png" alt="" class="product-img">
+              <h2 class="product-title">Milk</h2>
+              <span class="price"><span>₱</span> 219.00</span>
+              <button class="appointmen-btn add-cart"><i class="fas fa-cart-shopping"></i> Add to cart<span></span></button>
+          
+            </div>
+                    
+                  
+                </div>
+
+           </div>
+           <div class="tabPanel">
+                <div class="product-list">
+                            
+                    
+                  <div class=" product-box">
+                    <img src="images/images/mask.png" alt="" class="product-img">
+                    <h2 class="product-title">Mask </h2>
+                    <span class="price"><span>₱</span> 90.00</span>
+                    <button class="appointmen-btn add-cart"><i class="fas fa-cart-shopping"></i> Add to cart<span></span></button>
+                
+                  </div>
+
+                  <div class=" product-box">
+                    <img src="images/images/gloves.webp" alt="" class="product-img">
+                    <h2 class="product-title">gloves</h2>
+                    <span class="price"><span>₱</span> 150.00</span>
+                    <button class="appointmen-btn add-cart"><i class="fas fa-cart-shopping"></i> Add to cart<span></span></button>
+                
+                  </div>
+
+                 
+                  <div class=" product-box">
+                    <img src="images/images/thermometer.jpg" alt="" class="product-img">
+                    <h2 class="product-title">thermometer</h2>
+                    <span class="price"><span>₱</span> 199.00</span>
+                    <button class="appointmen-btn add-cart"><i class="fas fa-cart-shopping"></i> Add to cart<span></span></button>
+
+                  </div>
+                  <div class=" product-box">
+                    <img src="images/images/syringe.jpg" alt="" class="product-img">
+                    <h2 class="product-title">syringe</h2>
+                    <span class="price"><span>₱</span> 179.00</span>
+                    <button class="appointmen-btn add-cart"><i class="fas fa-cart-shopping"></i> Add to cart<span></span></button>
+                
+                  </div>
+
+                  
+
+                  
+                    
+                  
+                </div>
+
+           </div>
+           <div class="tabPanel">
+            <div class="product-list">
+                        
+                <div class=" product-box">
+                  <img src="images/images/biogesic.png" alt="" class="product-img">
+                  <h2 class="product-title">Biogesic</h2>
+                  <span class="price"><span>₱</span> 120.00</span>
+                  <button class="appointmen-btn add-cart"><i class="fas fa-cart-shopping"></i> Add to cart<span></span></button>
+
+              </div>
+              
+
+
+              <div class=" product-box">
+                <img src="images/images/alcohol.png" alt="" class="product-img">
+                <h2 class="product-title">alcohol</h2>
+                <span class="price"><span>₱</span> 119.00</span>
+                <button class="appointmen-btn add-cart"><i class="fas fa-cart-shopping"></i> Add to cart<span></span></button>
+            
+              </div>
+              
+              
+
+              <div class=" product-box">
+                <img src="images/images/betadine.jpg" alt="" class="product-img">
+                <h2 class="product-title">betadine</h2>
+                <span class="price"><span>₱</span> 65.00</span>
+                <button class="appointmen-btn add-cart"><i class="fas fa-cart-shopping"></i> Add to cart<span></span></button>
+            
+              </div>
+
+              <div class=" product-box">
+                <img src="images/images/antibiotic.png" alt="" class="product-img">
+                <h2 class="product-title">antibiotic</h2>
+                <span class="price"><span>₱</span> 159.00</span>
+                <button class="appointmen-btn add-cart"><i class="fas fa-cart-shopping"></i> Add to cart<span></span></button>
+            
+              </div>
+                
+              
+            </div>
+           
+        </div>
+          <div class="tabPanel">
+            <div class="product-list">
+                        
+              
+              
+
+
+              <div class=" product-box">
+                <img src="images/images/alcohol.png" alt="" class="product-img">
+                <h2 class="product-title">alcohol</h2>
+                <span class="price"><span>₱</span> 119.00</span>
+                <button class="appointmen-btn add-cart"><i class="fas fa-cart-shopping"></i> Add to cart<span></span></button>
+            
+              </div>
+              
+              
+
+              
+
+              <div class=" product-box">
+                <img src="images/images/mask.png" alt="" class="product-img">
+                <h2 class="product-title">mask</h2>
+                <span class="price"><span>₱</span> 90.00</span>
+                <button class="appointmen-btn add-cart"><i class="fas fa-cart-shopping"></i> Add to cart<span></span></button>
+            
+              </div>
+              <div class=" product-box">
+                <img src="images/images/baby-powder.jpg" alt="" class="product-img">
+                <h2 class="product-title">baby powder</h2>
+                <span class="price"><span>₱</span> 35.00</span>
+                <button class="appointmen-btn add-cart"><i class="fas fa-cart-shopping"></i> Add to cart<span></span></button>
+            
+              </div>
+              <div class=" product-box">
+                <img src="images/images/soap.png" alt="" class="product-img">
+                <h2 class="product-title">Soap</h2>
+                <span class="price"><span>₱</span> 19.00</span>
+                <button class="appointmen-btn add-cart"><i class="fas fa-cart-shopping"></i> Add to cart<span></span></button>
+            
+              </div>
+                
+              
+            </div>
+          
+        </div>
+        <div class="tabPanel">
+          <div class="product-list">
+                      
+             
+            
+
+
+            <div class=" product-box">
+              <img src="images/images/alcohol.png" alt="" class="product-img">
+              <h2 class="product-title">alcohol</h2>
+              <span class="price"><span>₱</span> 119.00</span>
+              <button class="appointmen-btn add-cart"><i class="fas fa-cart-shopping"></i> Add to cart<span></span></button>
+          
+            </div>
+            
+            
+
+            
+
+            
+            <div class=" product-box">
+              <img src="images/images/baby-powder.jpg" alt="" class="product-img">
+              <h2 class="product-title">baby powder</h2>
+              <span class="price"><span>₱</span> 35.00</span>
+              <button class="appointmen-btn add-cart"><i class="fas fa-cart-shopping"></i> Add to cart<span></span></button>
+          
+            </div>
+            <div class=" product-box">
+              <img src="images/images/baby_lotion.png" alt="" class="product-img">
+              <h2 class="product-title">baby lotion</h2>
+              <span class="price"><span>₱</span> 169.00</span>
+              <button class="appointmen-btn add-cart"><i class="fas fa-cart-shopping"></i> Add to cart<span></span></button>
+          
+            </div>
+            <div class=" product-box">
+              <img src="images/images/milk.png" alt="" class="product-img">
+              <h2 class="product-title">Milk</h2>
+              <span class="price"><span>₱</span> 219.00</span>
+              <button class="appointmen-btn add-cart"><i class="fas fa-cart-shopping"></i> Add to cart<span></span></button>
+          
+            </div>
+              
+            
+          </div>
+         
+      </div>
+      
+        
+        
+        </div>
+      </div>
+      
+
+    </section>
+    <footer><footer>
+      <script>
+        var tabButtons=document.querySelectorAll(".tabContainer .buttonContainer button");
+        var tabPanels=document.querySelectorAll(".tabContainer  .tabPanel");
+
+        function showPanel(panelIndex,colorCode) {
+            tabButtons.forEach(function(node){
+                node.style.backgroundColor="";
+                node.style.color="";
+                node.style.fontSize="";
+            });
+            tabButtons[panelIndex].style.backgroundColor=colorCode;
+            tabButtons[panelIndex].style.color="white";
+            tabButtons[panelIndex].style.fontSize="1.5rem";
+            tabPanels.forEach(function(node){
+                node.style.display="none";
+            });
+            tabPanels[panelIndex].style.display="block";
+            tabPanels[panelIndex].style.backgroundColor=colorCode;
+        }
+        showPanel(0,'transparent');
+      </script>
+
+      <script src="js/script.js"></script>
+  </body>
+</html>
